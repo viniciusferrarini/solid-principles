@@ -1,9 +1,9 @@
-package com.vncsferrarini.solid.domain.model;
+package com.vncsferrarini.solid.web.dto;
 
 import lombok.Builder;
 
 @Builder
-public record Client(
+public record ClientDto(
         String id,
         String name,
         String email,

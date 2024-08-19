@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: solid-principles
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/solid-hotel?authSource=solid-hotel
+      auto-index-creation: true
