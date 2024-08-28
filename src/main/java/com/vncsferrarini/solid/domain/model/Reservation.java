@@ -7,7 +7,7 @@ import java.time.Instant;
 @RequiredArgsConstructor
 public class Reservation {
 
-    private final long id;
+    private final String id;
     private final Client client;
     private final Room room;
     private final Instant checkIn;

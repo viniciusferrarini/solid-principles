@@ -2,7 +2,10 @@ package com.vncsferrarini.solid.web.mapper;
 
 import com.vncsferrarini.solid.domain.model.Client;
 import com.vncsferrarini.solid.web.dto.ClientDto;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
 public class ClientDtoMapper {
 
     public static Client toDomain(final ClientDto clientDto) {
