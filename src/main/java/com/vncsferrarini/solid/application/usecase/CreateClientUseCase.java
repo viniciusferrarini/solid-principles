@@ -1,9 +1,18 @@
 package com.vncsferrarini.solid.application.usecase;
 
 import com.vncsferrarini.solid.domain.model.Client;
+import com.vncsferrarini.solid.domain.repository.CreateClientRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
-public interface CreateClientUseCase {
+@Component
+@RequiredArgsConstructor
+public class CreateClientUseCase {
 
-    Client create(final Client client);
+    private final CreateClientRepository createClientRepository;
+
+    public Client create(final Client client) {
+        return createClientRepository.create(client);
+    }
 
 }
